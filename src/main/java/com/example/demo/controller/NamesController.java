@@ -16,7 +16,7 @@ public String getHomePage()
 {
 return "index";	
 }
-@PostMapping("sauvegarde")
+@PostMapping("affichage")
 public String lister(Model md,@RequestParam String nom)
 {
 listeNom.add(nom);
