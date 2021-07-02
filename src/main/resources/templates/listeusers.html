@@ -18,8 +18,8 @@
 <table class="table table-bordered">
 <thead><tr><th>Nom</th><th>Prenom</th><th>age</th></tr></thead>
 <tbody><tr th:each="users: ${liste}">
-<td><th:block th:if="${users.age<18}" th:text="${users.nom}">nom</th:block></td>
-<td><th:block th:if="${users.age<18}" th:text="${users.prenom}">prenom</th:block></td>
+<td><th:block th:if="${users.age>18}" th:text="${users.nom}">nom</th:block></td>
+<td><th:block th:if="${users.age>18}" th:text="${users.prenom}">prenom</th:block></td>
 <td><th:block th:text="${users.age}">age</th:block></td>
 </tr></tbody>
 </table>
